@@ -7,11 +7,11 @@ app.use(bodyParser.json()); // NEEDED FOR ANGULARJS
 
 app.use(express.static('server/public'));
 
-const galleryRouter = require('./routers/cardRouter');
+const cardRouter = require('./routers/cardRouter');
 app.use('/card', cardRouter);
 
-const galleryRouter = require('./routers/playerRouter');
-app.use('/player', playerRouter);
+// const playerRouter = require('./routers/playerRouter');
+// app.use('/player', playerRouter);
 
 app.listen(PORT, function(){
   console.log(`server listening on port ${PORT}`);

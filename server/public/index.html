@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = "myApp">
   <head>
     <meta charset="utf-8">
     <title>mtgTrivia</title>
+    <script src="vendors/angular.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.js" charset="utf-8"></script>
+    <script src="vendors/angular-messages.js" charset="utf-8"></script>
+    <script src="vendors/angular-material.js" charset="utf-8"></script>
+    <script src="vendors/angular-aria.js" charset="utf-8"></script>
+    <script src="vendors/angular-animate.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/css/master.css">
   </head>
-  <body>
+  <body ng-controller="CardController as vm">
 <h1>mtgTrivia</h1>
+<button ng-click = "vm.getRandomCard()">Random</button>
+<img ng-src="{{vm.randomCard.url}}" alt="">
   </body>
 </html>
