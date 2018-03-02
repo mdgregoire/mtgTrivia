@@ -3,18 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>mtgTrivia</title>
-    <script src="vendors/angular.js" charset="utf-8"></script>
-    <script src="vendors/angular-route.js" charset="utf-8"></script>
-    <script src="vendors/angular-messages.js" charset="utf-8"></script>
-    <script src="vendors/angular-material.js" charset="utf-8"></script>
-    <script src="vendors/angular-aria.js" charset="utf-8"></script>
-    <script src="vendors/angular-animate.js" charset="utf-8"></script>
-    <script src="scripts/client.js" charset="utf-8"></script>
+    <script src="/vendors/angular.js" charset="utf-8"></script>
+    <script src="/vendors/angular-route.js" charset="utf-8"></script>
+    <script src="/vendors/angular-messages.js" charset="utf-8"></script>
+    <script src="/vendors/angular-material.js" charset="utf-8"></script>
+    <script src="/vendors/angular-aria.js" charset="utf-8"></script>
+    <script src="/vendors/angular-animate.js" charset="utf-8"></script>
+    <script src="/scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/css/master.css">
+    <script src="scripts/controllers/CardController.js" charset="utf-8"></script>
   </head>
-  <body ng-controller="CardController as vm">
+  <body>
 <h1>mtgTrivia</h1>
-<button ng-click = "vm.getRandomCard()">Random</button>
-<img ng-src="{{vm.randomCard.url}}" alt="">
+<nav>
+
+
+</nav>
+<div ng-view>
+
+</div>
   </body>
 </html>
